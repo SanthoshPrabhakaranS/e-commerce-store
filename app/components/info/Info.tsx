@@ -36,8 +36,8 @@ const Info: React.FC<InfoProps> = ({ product }) => {
         </div>
       </div>
       <div>
-        <button className="bg-black px-5 py-3 flex flex-row gap-2 items-center rounded-full hover:opacity-80 transition-all mt-2">
-          <ShoppingCart onClick={() => {addCart(product)}} color="white" size={20} />{" "}
+        <button onClick={() => {addCart(product)}} className="bg-black px-5 py-3 flex flex-row gap-2 items-center rounded-full hover:opacity-80 transition-all mt-2">
+          <ShoppingCart color="white" size={20} />{" "}
           <span className="text-white text-sm font-medium">Add To Cart</span>
         </button>
       </div>
